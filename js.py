@@ -24,9 +24,9 @@ def clear_text():
         os.system('clear')
 
 def status_print(ip,port,thread_id,rps,path_get):
-    print(f"{Fore.YELLOW}HTTP{Fore.CYAN}Flood{Fore.WHITE}=>{Fore.BLUE}target{Fore.WHITE}=>{Fore.GREEN}{ip}:{port} {Fore.BLUE}path {Fore.WHITE}={path_get}")
-    print(f"{Fore.GREEN}HTTP{Fore.YELLOW}Flood{Fore.WHITE}=>{Fore.RED}target{Fore.WHITE}=>{Fore.BLUE}{ip}:{port} {Fore.CYAN}rps {Fore.WHITE}={rps}")
-    print(f"{Fore.BLUE}HTTP{Fore.WHITE}Flood{Fore.WHITE}=>{Fore.GREEN}target{Fore.WHITE}=>{Fore.CYAN}{ip}:{port} {Fore.WHITE}id ={thread_id} {Fore.RESET}")
+    print(f"{Fore.YELLOW}HTTP {Fore.LIGHTWHITE_EX}Flood {Fore.WHITE}=> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get}") 
+    print(f"{Fore.BLUE}HTTP {Fore.LIGHTGREEN_EX}Flood {Fore.WHITE}=> {Fore.YELLOW}TARGET{Fore.WHITE}={ip}:{port} {Fore.CYAN}RPS{Fore.WHITE}={rps}") 
+    print(f"{Fore.WHITE}HTTP {Fore.LIGHTYELLOW_EX}Flood {Fore.WHITE}=> {Fore.CYAN}TARGET{Fore.WHITE}={ip}:{port}{Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
 def generate_url_path_pyflooder(num):
     msg = str(string.ascii_letters + string.digits + string.punctuation)
     data = "".join(random.sample(msg, int(num)))
