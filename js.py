@@ -100,16 +100,16 @@ banner = f"""
 print(banner)
 host = ""
 ip = ""
-print(f"{Fore.LIGHTYELLOW_EX}╭─────────────────")
+print(f"{Fore.CYAN}╭─────────────────")
 target_loader = input(f"{Fore.CYAN}╰─> IP/URL:{Fore.BLUE} ")
 port_loader = int(input(f"{Fore.CYAN}╰─> PORT:{Fore.BLUE} "))
 time_loader = time.time() + int(input(f"{Fore.CYAN}╰─> TIME(DF250):{Fore.BLUE} "))
 spam_loader = int(input(f"{Fore.CYAN}╰─> SP THREAD(DF50/250):{Fore.BLUE} "))
-create_thread = int(input(F"{Fore.LmCYAN}╰─> CR THREAD (DF=50):{Fore.BLUE} "))
+create_thread = int(input(F"{Fore.CYAN}╰─> CR THREAD (DF=50):{Fore.BLUE} "))
 booter_sent = int(input(F"{Fore.CYAN}╰─> BOOTER SENT (DF500):{Fore.BLUE} "))
 print(f"{Fore.CYAN}       EXAMPLE HTTP METHODS> CONNECT GET POST {Fore.BLACK}PUT PATCH HEAD DELETE OPTIONS TRACE")
 print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> {Fore.BLACK}PANOS MIRAI EXPLOIT LOGSHELL SERVER CLOUDFLARE AGE PYFLOODER GATEWAY")
-methods_loader = input(F"{Fore.LIGHTCYAN_EX}╰─>HTTP_METHODS:{Fore.BLUE} ")
+methods_loader = input(F"{Fore.CYAN}╰─>HTTP_METHODS:{Fore.BLUE} ")
 print(f"{Fore.MAGENTA}TRYING TO GET IP:PORT {Fore.LIGHTMAGENTA_EX}. . .{Fore.RESET}")
 try:
     host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
