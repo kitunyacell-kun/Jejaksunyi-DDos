@@ -24,8 +24,8 @@ def clear_text():
         os.system('clear')
 
 def status_print(ip,port,thread_id,rps,path_get):
-    print(f"\r{Fore.YELLOW}FLOODING{Fore.LIGHTWHITE_EX}HTTP {Fore.WHITE}=> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.YELLOW}PATH{Fore.WHITE}={path_get} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}") 
-    print(f"\r{Fore.BLUE}FLOODING{Fore.LIGHTGREEN_EX}HTTP {Fore.WHITE}=> {Fore.YELLOW}TARGET{Fore.BLUE}={ip}:{port} {Fore.GREEN}PATH{Fore.WHITE}={path_get}{Fore.CYAN}RPS{Fore.RED}={rps} {Fore.RESET}") 
+    print(f"\r{Fore.YELLOW}FLOODING{Fore.LIGHTWHITE_EX}HTTP {Fore.WHITE}=> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.YELLOW}PATH{Fore.WHITE}={path_get} {Fore.CYAN}id{Fore.WHITE}={thread_id}{Fore.RESET}") 
+    print(f"\r{Fore.BLUE}FLOODING{Fore.YELLOW}HTTP {Fore.WHITE}=> {Fore.YELLOW}TARGET{Fore.BLUE}={ip}:{port} {Fore.GREEN}PATH{Fore.WHITE}={path_get}{Fore.CYAN}rps{Fore.RED}={rps} {Fore.RESET}") 
 def generate_url_path_pyflooder(num):
     msg = str(string.ascii_letters + string.digits + string.punctuation)
     data = "".join(random.sample(msg, int(num)))
