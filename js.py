@@ -100,7 +100,7 @@ print(banner)
 host = ""
 ip = ""
 print(f"{Fore.CYAN}╭{'─' * 57}╮")
-print(f"{Fore.CYAN}│{'─' * 4"){Fore.YELLOW}Dedication to the struggle of the Palestinian people{'─' * 4}|")
+print(f"{Fore.CYAN}│{'─' * 4}{Fore.YELLOW}Dedication to the struggle of the Palestinian people{'─' * 4}|")
 target_loader = input(f"{Fore.CYAN}╰─> IP/URL:{Fore.BLUE} {'─' * 10}|")
 port_loader = int(input(f"{Fore.CYAN}╰─> PORT:{Fore.BLUE} {'─' * 10}|"))
 time_loader = time.time() + int(input(f"{Fore.CYAN}╰─> TIME(DF250):{Fore.BLUE} {'─' * 8}|"))
