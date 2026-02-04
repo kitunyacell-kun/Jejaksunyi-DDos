@@ -86,14 +86,14 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
         threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
 #DATA
 banner = f"""
-{Fore.LIGHTWHITE_EX}    ┌───╮                   ╭╮
-{Fore.LIGHTWHITE_EX}    └────╮ ╭───╮ ┌───╮ ╭───╮ ││  ╭╮  ╭────╮╭╮   ╭╮╭╮╭──╮ ╭╮   ╭╮╭╮
+{Fore.LIGHTWHITE_EX}   ┌───╮                   ╭╮
+{Fore.LIGHTWHITE_EX}   └────╮ ╭───╮ ┌───╮ ╭───╮ ││  ╭╮  ╭────╮╭╮   ╭╮╭╮╭──╮ ╭╮   ╭╮╭╮
 {Fore.LIGHTWHITE_EX}       ││ │╭───╮└────╮╰────╮││ ╭╯|  │╭───╯││   │││╰╯╭──╮││   ││││
 {Fore.LIGHTWHITE_EX}       ││ │╰──╯│     ││╭───╯││╰─╯╭╯  │╰───╮││   │││╭─╯ ││││   ││││
 {Fore.LIGHTWHITE_EX}  ╭╮   ││ │┌───╯    │││╭──╮││╭─╮╰╮  ╰───╮|││   ││││   │││╰───╯│││
 {Fore.LIGHTWHITE_EX}  |╰────╯ |╰──╮╭╮   ││╰───╯|││ ╰╮|  ╭────╯│╰────╯││   ││╰────╮│││
 {Fore.LIGHTWHITE_EX}  ╰────╯  ╰───╯|╰────╯ ╰───╯╰╯  ╰╯  ╰───╯▒╰────╯▒╰╯   ╰╯╭─────╯╰╯
-{Fore.LIGHTWHITE_EX}              ╰────╯                              ╰────╯
+{Fore.LIGHTWHITE_EX}               ╰────╯                              ╰────╯
 {Fore.RESET}"""
 
 print(banner)
