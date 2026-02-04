@@ -71,7 +71,7 @@ if __name__ == "__main__":
 	else:
 		data.size = int(data.size)
 	if not check_root():
-		display('-', f"This Program requires {Back.MAGENTA}root{Back.RESET} Privileges")
+		display('-', f"This Program requires {thread_index} ")
 		exit(0)
 	thread_count = cpu_count()
 	pool = Pool(thread_count)
