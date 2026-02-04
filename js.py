@@ -31,7 +31,7 @@ def generate_url_path_pyflooder(num):
     return data
     
 def generate_url_path_choice(num):
-    letter = {Fore.BLACK}'''abcdefghijklmnopqrstuvwxyzABCDELFGHIJKLMNOPQRSTUVWXYZ0123456789!"#$%&'()*+,-./:;?@[\]^_`{|}~'''
+    letter = f"{Fore.BLACK}'''abcdefghijklmnopqrstuvwxyzABCDELFGHIJKLMNOPQRSTUVWXYZ0123456789!"#$%&'()*+,-./:;?@[\]^_`{|}~'''
     data = ""
     for _ in range(int(num)):
         data += random.choice(letter)
