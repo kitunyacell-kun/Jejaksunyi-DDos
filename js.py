@@ -100,7 +100,7 @@ banner = f"""
 print(banner)
 host = ""
 ip = ""
-f"{Fore.LIGHTYELLOW_EX}╭─────────────────")
+print(f"{Fore.LIGHTYELLOW_EX}╭─────────────────")
 target_loader = input(f"{Fore.LIGHTYELLOW_EX}╰─> IP/URL: ")
 port_loader = int(input(f"{Fore.LIGHTYELLOW_EX}╰─> PORT: "))
 time_loader = time.time() + int(input(f"{Fore.LIGHTCYAN_EX}╰─> TIME(DF250): "))
