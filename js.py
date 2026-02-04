@@ -86,13 +86,13 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
         threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
 #DATA
 banner = f"""
-{Fore.LIGHTWHITE_EX}  ┌───╮                   ╭╮
-{Fore.LIGHTWHITE_EX}  └────╮╭───╮ ┌───╮ ╭───╮ ││  ╭╮  ╭────╮╭╮   ╭╮╭╮╭──╮ ╭╮   ╭╮╭╮
-{Fore.LIGHTWHITE_EX}         │││╭───╮└────╮╰────╮││ ╭╯|  │╭───╯││   │││╰╯╭──╮││   ││││
-{Fore.LIGHTWHITE_EX}         │││╰──╯│     ││╭───╯││╰─╯╭╯  │╰───╮││   │││╭─╯ ││││   ││││
-{Fore.LIGHTWHITE_EX}  ╭╮    │││┌───╯    │││╭──╮││╭─╮╰╮  ╰───╮|││   ││││   │││╰───╯│││
-{Fore.LIGHTWHITE_EX}  |╰────╯|╰──╮╭╮   ││╰───╯|││ ╰╮|  ╭────╯│╰────╯││   ││╰────╮│││
-{Fore.LIGHTWHITE_EX}  ╰────╯ ╰───╯|╰────╯ ╰───╯╰╯  ╰╯  ╰───╯▒╰────╯▒╰╯   ╰╯╭─────╯╰╯
+{Fore.LIGHTWHITE_EX}    ┌───╮                   ╭╮
+{Fore.LIGHTWHITE_EX}    └────╮ ╭───╮ ┌───╮ ╭───╮ ││  ╭╮  ╭────╮╭╮   ╭╮╭╮╭──╮ ╭╮   ╭╮╭╮
+{Fore.LIGHTWHITE_EX}         ││ │╭───╮└────╮╰────╮││ ╭╯|  │╭───╯││   │││╰╯╭──╮││   ││││
+{Fore.LIGHTWHITE_EX}         ││ │╰──╯│     ││╭───╯││╰─╯╭╯  │╰───╮││   │││╭─╯ ││││   ││││
+{Fore.LIGHTWHITE_EX}  ╭╮    ││ │┌───╯    │││╭──╮││╭─╮╰╮  ╰───╮|││   ││││   │││╰───╯│││
+{Fore.LIGHTWHITE_EX}  |╰────╯ |╰──╮╭╮   ││╰───╯|││ ╰╮|  ╭────╯│╰────╯││   ││╰────╮│││
+{Fore.LIGHTWHITE_EX}  ╰────╯  ╰───╯|╰────╯ ╰───╯╰╯  ╰╯  ╰───╯▒╰────╯▒╰╯   ╰╯╭─────╯╰╯
 {Fore.LIGHTWHITE_EX}              ╰────╯                              ╰────╯
 {Fore.RESET}"""
 
@@ -100,7 +100,7 @@ print(banner)
 host = ""
 ip = ""
 print(f"{Fore.CYAN}╭{'─' * 63}╮")
-print(f"{Fore.CYAN}│{' ' * 4}{Fore.YELLOW}DEDICATION TO THE STRUGLLE OF THE PALISTINIAN POEPLE{' ' * 6}{Fore.CYAN}|")
+print(f"{Fore.CYAN}│{' ' * 4}{Fore.YELLOW}DEDICATION TO THE STRUGLLE OF THE PALISTINIAN POEPLE{' ' * 7}{Fore.CYAN}|")
 print(f"{Fore.CYAN}│{' ' * 63}│")
 target_loader = input(f"{Fore.CYAN}╰─> IP/URL: {Fore.BLUE}")
 port_loader = int(input(f"{Fore.CYAN}╰─> PORT:{Fore.BLUE} {Fore.RESET}"))
