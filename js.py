@@ -1,5 +1,4 @@
 #!/usr/bin/env python3.12
-# _*_ coding: utf-8 _*_
 # CHECK IMPORT
 try:
     import socket
