@@ -1,6 +1,6 @@
-#!usr/bin/python
+#!/usr/bin/env python3.12
 # _*_ coding: utf-8 _*_
-#!/usr/bin/env python3
+
 
 from os import geteuid
 from datetime import date
