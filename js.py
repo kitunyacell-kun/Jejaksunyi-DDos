@@ -99,12 +99,12 @@ banner = f"""
 print(banner)
 host = ""
 ip = ""
-print(f"{Fore.CYAN}╭{'─' * 57}╮")
-print(f"{Fore.CYAN}│{' ' * 4}{Fore.YELLOW}DEDICATION TO THE STRUGLLE OF THE PALISTINIAN POEPLE{' ' * 4}{Fore.CYAN}|")
-print(f"{Fore.CYAN}│{' ' * 60}│")
-target_loader = input(f"{Fore.CYAN}╰─> IP/URL: {Fore.BLUE}"){Fore.CYAN}{' ' * 10}|")
-port_loader = int(input(f"{Fore.CYAN}╰─> PORT:{Fore.BLUE} {Fore.RESET}{' ' * 10}|"))
-time_loader = time.time() + int(input(f"{Fore.CYAN}╰─> TIME(DF250):{Fore.BLUE} {Fore.RESET}{' ' * 8}|"))
+print(f"{Fore.CYAN}╭{'─' * 63}╮")
+print(f"{Fore.CYAN}│{' ' * 4}{Fore.YELLOW}DEDICATION TO THE STRUGLLE OF THE PALISTINIAN POEPLE{' ' * 6}{Fore.CYAN}|")
+print(f"{Fore.CYAN}│{' ' * 63}│")
+target_loader = input(f"{Fore.CYAN}╰─> IP/URL: {Fore.BLUE}")
+port_loader = int(input(f"{Fore.CYAN}╰─> PORT:{Fore.BLUE} {Fore.RESET}"))
+time_loader = time.time() + int(input(f"{Fore.CYAN}╰─> TIME(DF250):{Fore.BLUE} "))
 spam_loader = int(input(f"{Fore.CYAN}╰─> SP THREAD(DF50/250):{Fore.BLUE} "))
 create_thread = int(input(F"{Fore.CYAN}╰─> CR THREAD (DF=50):{Fore.BLUE} "))
 booter_sent = int(input(F"{Fore.CYAN}╰─> BOOTER SENT (DF500):{Fore.BLUE} "))
