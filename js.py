@@ -88,9 +88,9 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 banner = f"""
 {Fore.LIGHTWHITE_EX}    ┌───╮                   ╭╮
 {Fore.LIGHTWHITE_EX}    └────╮ ╭───╮ ┌───╮ ╭───╮ ││  ╭╮  ╭────╮╭╮   ╭╮╭╮╭──╮ ╭╮   ╭╮╭╮
-{Fore.LIGHTWHITE_EX}         ││ │╭───╮└────╮╰────╮││ ╭╯|  │╭───╯││   │││╰╯╭──╮││   ││││
-{Fore.LIGHTWHITE_EX}         ││ │╰──╯│     ││╭───╯││╰─╯╭╯  │╰───╮││   │││╭─╯ ││││   ││││
-{Fore.LIGHTWHITE_EX}  ╭╮    ││ │┌───╯    │││╭──╮││╭─╮╰╮  ╰───╮|││   ││││   │││╰───╯│││
+{Fore.LIGHTWHITE_EX}        ││ │╭───╮└────╮╰────╮││ ╭╯|  │╭───╯││   │││╰╯╭──╮││   ││││
+{Fore.LIGHTWHITE_EX}        ││ │╰──╯│     ││╭───╯││╰─╯╭╯  │╰───╮││   │││╭─╯ ││││   ││││
+{Fore.LIGHTWHITE_EX}  ╭╮   ││ │┌───╯    │││╭──╮││╭─╮╰╮  ╰───╮|││   ││││   │││╰───╯│││
 {Fore.LIGHTWHITE_EX}  |╰────╯ |╰──╮╭╮   ││╰───╯|││ ╰╮|  ╭────╯│╰────╯││   ││╰────╮│││
 {Fore.LIGHTWHITE_EX}  ╰────╯  ╰───╯|╰────╯ ╰───╯╰╯  ╰╯  ╰───╯▒╰────╯▒╰╯   ╰╯╭─────╯╰╯
 {Fore.LIGHTWHITE_EX}              ╰────╯                              ╰────╯
