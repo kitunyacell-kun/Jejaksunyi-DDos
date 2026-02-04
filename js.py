@@ -102,7 +102,7 @@ ip = ""
 print(f"{Fore.CYAN}╭{'─' * 57}╮")
 print(f"{Fore.CYAN}│{' ' * 4}{Fore.YELLOW}DEDICATION TO THE STRUGLLE OF THE PALISTINIAN POEPLE{' ' * 4}{Fore.CYAN}|")
 print(f"{Fore.CYAN}│{' ' * 60}│")
-target_loader = input(f"{Fore.CYAN}╰─> IP/URL:{Fore.BLUE} {Fore.RESET}{' ' * 10}|")
+target_loader = input(f"{Fore.CYAN}╰─> IP/URL: {Fore.BLUE}"){Fore.CYAN}{' ' * 10}|")
 port_loader = int(input(f"{Fore.CYAN}╰─> PORT:{Fore.BLUE} {Fore.RESET}{' ' * 10}|"))
 time_loader = time.time() + int(input(f"{Fore.CYAN}╰─> TIME(DF250):{Fore.BLUE} {Fore.RESET}{' ' * 8}|"))
 spam_loader = int(input(f"{Fore.CYAN}╰─> SP THREAD(DF50/250):{Fore.BLUE} "))
