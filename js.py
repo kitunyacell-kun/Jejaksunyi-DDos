@@ -93,7 +93,7 @@ banner = f"""
 {Fore.LIGHTWHITE_EX}  ╭╮   │││┌───╯    │││╭──╮││╭─╮╰╮  ╰───╮|││   ││││   │││╰───╯│││
 {Fore.LIGHTWHITE_EX}  |╰────╯|╰──╮╭╮   ││╰───╯|││ ╰╮|  ╭────╯│╰────╯││   ││╰────╮│││
 {Fore.LIGHTWHITE_EX}  ╰────╯ ╰───╯|╰────╯ ╰───╯╰╯  ╰╯  ╰───╯ ╰────╯ ╰╯   ╰╯╭─────╯╰╯
-{Fore.LIGHTWHITE_EX}              ╰────╯                                      ╰────╯
+{Fore.LIGHTWHITE_EX}              ╰────╯                                   ╰────╯
 {Fore.RESET}"""
 
 print(banner)
