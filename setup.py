@@ -6,9 +6,9 @@ c = input(">>>: ")
 if c == "0":
     os.system("pip install colorama")
     os.system("pip install randomstring")
-    os.system("pip install colorama")
+    os.system("pip install platform")
 elif c == "1":
     os.system("pip3 install colorama")
     os.system("pip3 install randomstring")
-    os.system("pip3 install colorama")
+    os.system("pip3 install platform")
 print("Done.")
